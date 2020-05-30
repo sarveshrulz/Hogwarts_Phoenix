@@ -362,6 +362,8 @@ struct cam_req_mgr_core_link {
 	bool                                 initial_skip;
 	bool                                 in_msync_mode;
 	int64_t                              initial_sync_req;
+        uint64_t                             sof_timestamp;
+        uint64_t                             prev_sof_timestamp;
 };
 
 /**
